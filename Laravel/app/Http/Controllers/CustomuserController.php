@@ -52,10 +52,11 @@ class CustomuserController extends Controller
 
     }
     public function edit($id){
-        echo 'edit';
+       // echo 'edit';
        //$id= $_GET['id'];
        $userss = Customusermodel::find($id);
-       print_r($userss);
+      // print_r($userss);
        return view('edit', ['userss' => $userss]);
     }
 }
+
