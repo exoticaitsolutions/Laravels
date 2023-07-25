@@ -43,18 +43,19 @@ class CustomuserController extends Controller
       return view('home', ['all_entries' => $all_entries]);
 
     }
-    public function delete(){
+    public function delete($id){
         //echo 'delete';
-        $id= $_GET['id'];
+        //$id= $_GET['id'];
         $user_delete =  Customusermodel::find($id);
         $user_delete->delete();
         return back()->with('success', 'User deleted successfully');
 
     }
-    public function edit(){
-       // echo 'edit';
-       $id= $_GET['id'];
+    public function edit($id){
+        echo 'edit';
+       //$id= $_GET['id'];
        $userss = Customusermodel::find($id);
+       print_r($userss);
        return view('edit', ['userss' => $userss]);
     }
 }

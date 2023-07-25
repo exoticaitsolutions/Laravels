@@ -25,7 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('/home', [App\Http\Controllers\CustomuserController::class, 'insert_data'])->name('insert');
 Route::post('/', [App\Http\Controllers\WelcomeController::class, 'insert_from'])->name('insert_from');
 Route::get('/home', [App\Http\Controllers\CustomuserController::class, 'show'])->name('show');
-Route::get('/delete', [App\Http\Controllers\CustomuserController::class, 'delete'])->name('delete');
-Route::get('/edit', [App\Http\Controllers\CustomuserController::class, 'edit'])->name('edit');
+Route::get('/delete/{id}', [App\Http\Controllers\CustomuserController::class, 'delete'])->name('delete');
+Route::get('/edit/{id}', [App\Http\Controllers\CustomuserController::class, 'edit'])->name('edit');
 
 

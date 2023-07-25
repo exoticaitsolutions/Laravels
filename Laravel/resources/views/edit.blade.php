@@ -1,1 +1,1 @@
-@dd($userss);
+{{$userss}}

@@ -507,8 +507,8 @@
                 <td> {{$entries['city']}}</td>
                 <td> {{$entries['text_area']}}</td>
                 <td><img class="gt_img" src="{{ asset('filename/'. $entries['filename']) }}" alt="Image Description"></td>
-                <td><a href="{{ route('edit') . '?id=' . $entries['id'] }}">Edit</a></td>
-                <td> <a href="{{ route('delete') . '?id=' . $entries['id'] }}">Delete</a></td>
+                <td> <a href="{{ route('edit', ['id' => $entries['id']]) }}">Edit</a></td>
+                <td> <a href="{{ route('delete', ['id' => $entries['id']]) }}">Delete</a></td>
                 
                 </tr>
                @endforeach
