@@ -1,0 +1,10 @@
+.banner_img {
+    background-size: cover;
+}
+.banner_img h1 {
+    font-size: 20px !important;
+    color: #ffff;
+    padding-top: 15%;
+    padding-bottom: 14%;
+    text-align: center;
+}

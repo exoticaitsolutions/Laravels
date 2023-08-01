@@ -110,3 +110,9 @@
     overflow: auto !important;
   }
 }
+tbody img {
+  width: 100px;
+}
+table td p {
+  width: 445px;
+}

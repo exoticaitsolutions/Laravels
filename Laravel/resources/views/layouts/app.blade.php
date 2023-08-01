@@ -41,6 +41,9 @@
   <script src="{{ asset('js/template.js') }}"></script>
   <script src="{{ asset('js//settings.js') }}"></script>
   <script src="{{ asset('js//todolist.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
   <!-- endinject -->
   <!-- plugin js for this page -->
   <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
@@ -54,7 +57,6 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">

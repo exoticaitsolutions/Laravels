@@ -25961,3 +25961,26 @@ tr:nth-child(even) {
 img.gt_img {
     height: 50px;
 }
+
+svg.w-5.h-5 {
+    height: 23px;
+}
+nav.flex.items-center.justify-between {
+  margin-top: 20px;
+}
+
+
+.hidden.sm\:flex-1.sm\:flex.sm\:items-center.sm\:justify-between {
+    display: flex;
+}
+nav.flex.items-center.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar + .page-body-wrapper {
+    padding-top: unset !important;
+}
+.get_entries.main-panel.content-wrapper.card-body {
+    background: #fff !important;
+    padding: unset;
+}
